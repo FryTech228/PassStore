@@ -111,7 +111,7 @@ namespace PassStore
                 f.EnPassword = RC4.Encrypt(f.Password, key);
         }
         
-		//Метод для сохранения xml файла после любых изменений (взяла шаблон из интернета)
+		//Метод для сохранения xml файла после любых изменений
         public static void saveXml()
         {
             File.WriteAllText(dataPath, $"<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<fields hash=\"{hash}\">\n</fields>");
